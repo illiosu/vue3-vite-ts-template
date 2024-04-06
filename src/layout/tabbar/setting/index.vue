@@ -1,6 +1,6 @@
 <template>
   <el-button type="primary" size="small" icon="Refresh" circle @click="updateRefresh"></el-button>
-  <el-button type="primary" size="small" icon="FullScreen" circle></el-button>
+  <el-button type="primary" size="small" icon="FullScreen" @click="fullScreen"></el-button>
   <el-button type="primary" size="small" icon="Setting" circle></el-button>
   <img src="/logo.png" style="width: 24px; height: 24px; margin: 0px, 10px" />
   <!-- 下拉菜单 -->
@@ -26,6 +26,17 @@ let layOutSettingStore = useLayOutSettingStore();
 //刷新按钮点击回调
 const updateRefresh = () => {
   layOutSettingStore.refresh = !layOutSettingStore.refresh;
+};
+
+//全屏按钮点击回调
+const fullScreen = () => {
+  let full = document.fullscreenElement;
+  // console.log(full);
+  if (!full) {
+    document.documentElement.requestFullscreen();
+  } else {
+    document.exitFullscreen();
+  }
 };
 </script>
 <style lang="scss" scoped></style>

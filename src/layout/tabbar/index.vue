@@ -20,10 +20,7 @@
 import useLayOutSettingStore from '@/store/modules/setting';
 import Breadcrumb from './breadcrumb/index.vue';
 import Setting from './setting/index.vue';
-let LayOutSettingStore = useLayOutSettingStore();
-const changeIcon = () => {
-  LayOutSettingStore.fold = !LayOutSettingStore.fold;
-};
+
 </script>
 <script lang="ts">
 export default {
