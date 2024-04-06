@@ -46,7 +46,7 @@ export default {
     height: 100vh;
     background-color: $base-slider-background;
     transition: all 0.3s;
-
+    color: white;
     .scrollbar {
       width: 100%;
       height: calc(90vh - $base-slider-logo-height);
