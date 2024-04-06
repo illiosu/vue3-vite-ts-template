@@ -4,8 +4,8 @@ let useLayOutSettingStore = defineStore('SettingStore', {
   state: () => {
     return {
       fold: false, //用于控制菜单折叠还是收起
-      refresh:false,
-    }
+      refresh: false, //用于控制刷新页面
+    };
   },
-})
-export default useLayOutSettingStore
+});
+export default useLayOutSettingStore;
