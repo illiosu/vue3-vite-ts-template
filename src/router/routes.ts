@@ -10,7 +10,6 @@ export const constantRoute = [
       hidden: true,
       icon: 'CircleCloseFilled',
     },
-    
   },
   {
     path: '/',
@@ -42,7 +41,6 @@ export const constantRoute = [
       hidden: true,
       icon: 'CircleCloseFilled',
     },
-    
   },
   {
     path: '/map',
@@ -52,10 +50,9 @@ export const constantRoute = [
       hidden: false,
       icon: 'CircleCloseFilled',
     },
-    
   },
   {
-    path:'/acl',
+    path: '/acl',
     component: () => import('@/layout/index.vue'),
     name: 'Acl',
     meta: {
@@ -63,6 +60,7 @@ export const constantRoute = [
       hidden: false,
       icon: 'Key',
     },
+    redirect: '/acl/user',
     children: [
       {
         path: '/acl/user',
@@ -97,108 +95,108 @@ export const constantRoute = [
     ],
   },
 
-//   {
-//     path: '/screen',
-//     component: () => import('@/views/screen/index.vue'),
-//     name: 'Screen',
-//     meta: {
-//       hidden: false,
-//       title: '数据大屏',
-//       icon: 'Platform',
-//     },
-//   },
-//   {
-//     path: '/acl',
-//     component: () => import('@/layout/index.vue'),
-//     name: 'Acl',
-//     meta: {
-//       title: '权限管理',
-//       hidden: false,
-//       icon: 'Key',
-//     },
-//     redirect:'/acl/user',
-//     children: [
-//       {
-//         path: '/acl/user',
-//         component: () => import('@/views/acl/user/index.vue'),
-//         name: 'User',
-//         meta: {
-//           title: '用户管理',
-//           hidden: false,
-//           icon: 'User',
-//         },
-//       },
-//       {
-//         path: '/acl/role',
-//         component: () => import('@/views/acl/role/index.vue'),
-//         name: 'Role',
-//         meta: {
-//           title: '角色管理',
-//           hidden: false,
-//           icon: 'UserFilled',
-//         },
-//       },
-//       {
-//         path: '/acl/permission',
-//         component: () => import('@/views/acl/permission/index.vue'),
-//         name: 'Permission',
-//         meta: {
-//           title: '菜单管理',
-//           hidden: false,
-//           icon: 'Tools',
-//         },
-//       },
-//     ],
-//   },
-//   {
-//     path: '/product',
-//     component: () => import('@/layout/index.vue'),
-//     name: 'Pruduct',
-//     meta: {
-//       title: '商品管理',
-//       icon: 'Goods',
-//       hidden: false,
-//     },
-//     redirect:'/product/trademark',
-//     children: [
-//       {
-//         path: '/product/trademark',
-//         component: () => import('@/views/product/trademark/index.vue'),
-//         name: 'Trademark',
-//         meta: {
-//           title: '品牌管理',
-//           icon: 'Document',
-//         },
-//       },
-//       {
-//         path: '/product/spu',
-//         component: () => import('@/views/product/spu/index.vue'),
-//         name: 'Spu',
-//         meta: {
-//           title: 'spu管理',
-//           icon: 'Notebook',
-//         },
-//       },
-//       {
-//         path: '/product/sku',
-//         component: () => import('@/views/product/sku/index.vue'),
-//         name: 'Sku',
-//         meta: {
-//           title: 'sku管理',
-//           icon: 'Tickets',
-//         },
-//       },
-//       {
-//         path: '/product/attr',
-//         component: () => import('@/views/product/attr/index.vue'),
-//         name: 'Attr',
-//         meta: {
-//           title: '属性管理',
-//           icon: 'StarFilled',
-//         },
-//       },
-//     ],
-//   },
+  //   {
+  //     path: '/screen',
+  //     component: () => import('@/views/screen/index.vue'),
+  //     name: 'Screen',
+  //     meta: {
+  //       hidden: false,
+  //       title: '数据大屏',
+  //       icon: 'Platform',
+  //     },
+  //   },
+  //   {
+  //     path: '/acl',
+  //     component: () => import('@/layout/index.vue'),
+  //     name: 'Acl',
+  //     meta: {
+  //       title: '权限管理',
+  //       hidden: false,
+  //       icon: 'Key',
+  //     },
+  //     redirect:'/acl/user',
+  //     children: [
+  //       {
+  //         path: '/acl/user',
+  //         component: () => import('@/views/acl/user/index.vue'),
+  //         name: 'User',
+  //         meta: {
+  //           title: '用户管理',
+  //           hidden: false,
+  //           icon: 'User',
+  //         },
+  //       },
+  //       {
+  //         path: '/acl/role',
+  //         component: () => import('@/views/acl/role/index.vue'),
+  //         name: 'Role',
+  //         meta: {
+  //           title: '角色管理',
+  //           hidden: false,
+  //           icon: 'UserFilled',
+  //         },
+  //       },
+  //       {
+  //         path: '/acl/permission',
+  //         component: () => import('@/views/acl/permission/index.vue'),
+  //         name: 'Permission',
+  //         meta: {
+  //           title: '菜单管理',
+  //           hidden: false,
+  //           icon: 'Tools',
+  //         },
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     path: '/product',
+  //     component: () => import('@/layout/index.vue'),
+  //     name: 'Pruduct',
+  //     meta: {
+  //       title: '商品管理',
+  //       icon: 'Goods',
+  //       hidden: false,
+  //     },
+  //     redirect:'/product/trademark',
+  //     children: [
+  //       {
+  //         path: '/product/trademark',
+  //         component: () => import('@/views/product/trademark/index.vue'),
+  //         name: 'Trademark',
+  //         meta: {
+  //           title: '品牌管理',
+  //           icon: 'Document',
+  //         },
+  //       },
+  //       {
+  //         path: '/product/spu',
+  //         component: () => import('@/views/product/spu/index.vue'),
+  //         name: 'Spu',
+  //         meta: {
+  //           title: 'spu管理',
+  //           icon: 'Notebook',
+  //         },
+  //       },
+  //       {
+  //         path: '/product/sku',
+  //         component: () => import('@/views/product/sku/index.vue'),
+  //         name: 'Sku',
+  //         meta: {
+  //           title: 'sku管理',
+  //           icon: 'Tickets',
+  //         },
+  //       },
+  //       {
+  //         path: '/product/attr',
+  //         component: () => import('@/views/product/attr/index.vue'),
+  //         name: 'Attr',
+  //         meta: {
+  //           title: '属性管理',
+  //           icon: 'StarFilled',
+  //         },
+  //       },
+  //     ],
+  //   },
   {
     path: '/:pathMatch(.*)*',
     redirect: '/404',
@@ -209,4 +207,4 @@ export const constantRoute = [
       icon: 'Operation',
     },
   },
-]
+];
